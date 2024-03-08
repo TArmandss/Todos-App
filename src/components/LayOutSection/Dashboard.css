@@ -1,0 +1,87 @@
+.right-side{
+    width: 350px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    background: #F3EF52;
+    border-radius: 15px;
+    /* padding: 25px; */
+  }
+
+  .profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .profile .h7{
+    position: relative;
+    top: 30px;
+    text-align: center;
+  }
+
+  .picture{
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    border: 1.5px solid #141518;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .status_box {
+    width: 120px;
+    height: 100px;
+    background: #fffd87a5;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+  }
+  .status_box h4{
+    color: #414124;
+    font-size: 8px;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+  }
+  .status_box p{
+    font-size: 17px;
+    font-weight: bold;
+    color: #282817;
+    position: relative;
+    top: 5px;
+    
+
+  }
+
+  .stats{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 35px 40px;
+  }
+ 
+  .paint{
+    width: 15%;
+    height: 20%;
+    background-image: url('C:\Users\Admin\OneDrive\Рабочий стол\Websites\app-expenses\assets\images\paint-splat-black-splash-scattered-drops-design-use-many-small-splats-splashes-abstract-vector-illustration-isolated-182022604 1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+    
+  }

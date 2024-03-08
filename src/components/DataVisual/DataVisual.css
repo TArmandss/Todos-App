@@ -1,0 +1,22 @@
+.data {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  display: grid;
+  grid-template-rows: 40px auto 1fr;
+  grid-gap: 1rem;
+}
+.data > :nth-child(2) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.data h4 {
+  position: relative;
+  left: 2rem;
+  color: white;
+  font-size: 40px;
+  max-width: 70%;
+}

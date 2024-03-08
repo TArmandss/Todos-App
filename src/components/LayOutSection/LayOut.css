@@ -1,0 +1,323 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  grid-gap: 1rem;
+}
+
+.left-content {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 0.6fr 0.8fr;
+  grid-gap: 1rem;
+}
+.left-content-changed {
+  position: relative;
+  gap: 1rem;
+  padding: 0 20px;
+}
+.top-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mid-row {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-gap: 1rem;
+}
+.todo-app-btn {
+  display: flex;
+  justify-content: baseline;
+  align-items: color;
+}
+.todo-app-btn button {
+  border-radius: 15px;
+  background: #f3ef52;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  font-size: 1.5vw;
+}
+.charts button {
+  border-radius: 15px;
+  background: #141518;
+  border: none;
+  width: 100%;
+  font-size: 1.5vw;
+  color: white;
+  cursor: pointer;
+}
+.charts {
+  position: relative;
+  display: flex;
+  justify-content: baseline;
+  align-items: color;
+  overflow: hidden;
+}
+.charts::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 145%;
+  content: " ";
+  background: url("../../../public/GOLD-6487-CareerGuide-Batch04-Images-GraphCharts-01-Line.jpeg");
+  background-position: 100%;
+  background-size: cover;
+  transform: rotate(-45deg); /* Rotate the background image by 45 degrees */
+  opacity: 0.1;
+  filter: grayscale(
+    100%
+  ); /* Apply a grayscale filter to make the image dark grey */
+}
+.top-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.greeting-box {
+  position: relative;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.greeting-box h4 {
+  color: white;
+  font-size: 40px;
+  max-width: 80%;
+  position: relative;
+  left: 10%;
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 150px 1fr;
+  background: #f3ef52;
+}
+.mid-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+}
+
+.bottom-section {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 65px 1fr;
+}
+
+.padding {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.todo_app_active {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0.1px solid black;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.left-side {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px auto;
+  padding-right: 40px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 13px;
+  color: #f3ef52;
+}
+
+.date,
+.time {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+}
+.time {
+  background: #141518;
+  color: whitesmoke;
+}
+.date {
+  background: #141518;
+  color: white;
+  font-size: 9px;
+}
+
+.todo_app {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #f3ef52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #141518;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.todo_app h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.some_text {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #141518;
+}
+
+.photo {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  width: 200px;
+  height: 200px;
+  background-image: url("C:\Users\Admin\OneDrive\Рабочий стол\Websites\app-expenses\assets\images\acc.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quotes p {
+  font-size: 12px;
+  width: 70%;
+  color: rgb(192, 192, 192);
+  line-height: 20px;
+}
+strong {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.todo_app:hover {
+  background: transparent;
+  color: #f3ef52;
+  border: 0.1px solid #f3ef52;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+.progress-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px -1px black, -3px -3px 5px -1px black;
+  padding: 20px;
+}
+
+.inner {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px black, inset -4px -4px 6px -1px black,
+    -0.5px -0.5px 0px black, 0.5px 0.5px 0px black, 0px 12px 10px -10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+circle {
+  fill: none;
+  stroke: #f9f779;
+  stroke-width: 20px;
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: anim 2s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+.svg {
+  position: absolute;
+  top: 286px;
+  left: 433px;
+}
+
+#number {
+  color: white;
+}
+
+.txt_stats {
+  width: 100%;
+  height: 100%;
+  padding: 25px 0;
+}
+.txt_stats h4 {
+  font-size: 17px;
+  width: 50%;
+  color: rgb(255, 255, 255);
+}
+.overall_stats {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15px;
+}
+.percentage_left,
+.percentage_done {
+  color: rgb(192, 192, 192);
+  font-size: 20px;
+}
+
+.txt_done_left {
+  color: rgb(192, 192, 192);
+  font-size: 9px;
+  margin-top: 1px;
+}
